@@ -1,0 +1,41 @@
+body, .panel-info {
+			background-color: #0f80e2;
+		}
+		
+		.panel-info:hover {
+			background-color: #1f92f4;
+		}
+		
+		.panel-default {
+			background-color: #fff;
+		}
+		
+		a, label {
+			color: #fff;
+		}
+		
+		a:hover {
+			text-decoration: none;    
+			color: #fff;
+		}
+		
+		.footer {
+			bottom: 0;
+			position: fiexd;
+		}
+		
+		.form-control {
+		    border: 0;
+		    box-shadow: none;
+		    padding:10px;
+		}
+		
+		button {
+		    background: none;
+		    color: #fff;
+		    border: none;
+		    padding: 0;
+		    font: inherit;
+		    cursor: pointer;
+		    outline: inherit;
+		}

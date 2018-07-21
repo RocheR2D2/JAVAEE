@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class homeServelet
+ * Servlet implementation class MonCompte
  */
-@WebServlet(name="home", urlPatterns= {"/homeServelet"})
-public class homeServelet extends HttpServlet {
+@WebServlet("/MonCompte")
+public class MonCompte extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public homeServelet() {
+    public MonCompte() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,20 +27,15 @@ public class homeServelet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		this.getServletContext().getRequestDispatcher("/WEB-INF/Acceuil.jsp").forward(request, response);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/MonCompte.jsp").forward(request, response);
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		/*
-		String url = request.getParameter("fullurl");
-		
-		request.setAttribute("fullurl", url);
-			*/
-		
+		// TODO Auto-generated method stub
+		doGet(request, response);
 	}
 
 }

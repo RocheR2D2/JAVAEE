@@ -2,7 +2,7 @@
 	
 	<div class="container">
 		
-		<form method="post" action="homeServelet">	
+		<form method="post" action="Raccourcir1">	
 			<div class="row">
 				<div class = "col-xs-2">
 					<label class="text-center">

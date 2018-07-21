@@ -6,6 +6,8 @@
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet src="css/style.css">
+	<title></title>
 	<style>
 		body, .panel-info {
 			background-color: #0f80e2;
@@ -52,7 +54,6 @@
 		
 		
 	</style>
-	<title></title>
 	</head>
 	<body>
 	<div class="Container-fluid" style="padding:20px;">
@@ -84,35 +85,29 @@
 				    <div class="panel-body text-center"><a href="Inscription"><b>Inscription</b></a></div>
 				</div>
 			</div>
-			
-			<div class="col-xs-2 p4">
-				<div class="panel panel-default">
-					 <div class="panel-body text-center"><a href="#"><b> # </b></a></div>
-				</div>
-			</div>
-			<div class="col-xs-2 p4b"  style="display:none">
+			<div class="col-xs-2 p4b">
 				<div class="panel panel-info">
-				    <div class="panel-body text-center"><a href="Raccourcir1"><b>Raccourcir</b></a></div>
+				    <div class="panel-body text-center"><a href="#"><b>Raccourcir</b></a></div>
 				</div>
 			</div>
 			<div class="col-xs-2 p5">
-				<div class="panel panel-default">
-					 <div class="panel-body text-center"><a href="#"><b> # </b></a></div>
-				</div>
-			</div>
-			<div class="col-xs-2 p5" style="display:none">
 				<div class="panel panel-info">
-				    <div class="panel-body text-center"><a href="#"><b>Mon Compte</b></a></div>
+				    <div class="panel-body text-center"><a href="MonCompte"><b>Mon Compte</b></a></div>
 				</div>
 			</div>
 			<div class="col-xs-2 p6">
 				<div class="panel panel-info">
-				    <div class="panel-body text-center"><a href="Connexion"><b>Connexion</b></a></div>
+				    <div class="panel-body text-center"><a href="deconnexionServelet"><b>Déconnexion</b></a></div>
 				</div>
 			</div>
 		</div>
 
+	<div class="container text-center">
+		<c:if test="${!empty sessionScope.useremail}">
+			<c:out value="Bonjour, ${ sessionScope.useremail } "/>
+			<p>Welcome Back! </p>
+		</c:if>
+	</div>
 
-
-
-
+	
+<jsp:include page="footer.jsp" />
